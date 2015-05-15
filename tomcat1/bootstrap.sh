@@ -6,6 +6,8 @@ if [ "$EUID" -ne "0" ] ; then
         exit 1
 fi
 
+echo "Installing git"
+apt-get install git -y
 
 echo "Installing mc"
 apt-get install mc -y
